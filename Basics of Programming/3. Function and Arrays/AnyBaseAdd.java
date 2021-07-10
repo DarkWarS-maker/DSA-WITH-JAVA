@@ -15,7 +15,7 @@ public class AnyBaseAdd {
             int digit = sum % b;
             carry = sum / b;
             ans += digit * multi;
-            multi*=10;
+            multi *= 10;
 
         }
         return ans;
