@@ -1,25 +1,27 @@
 import java.util.*;
 
-public class DTAB {
+public class ABTDB {
     public static Scanner sc = new Scanner(System.in);
 
-    public static int decimalToAnyBase(int n, int b) {
+    public static int anyBaseToDec(int n, int b) {
         int ans = 0;
         int mult = 1;
         while (n != 0) {
-            int rem = n % b;
-            n /= b;
+            int rem = n % 10;
+            n /= 10;
             ans += rem * mult;
-            mult *= 10;
+            mult *= b;
+
         }
         return ans;
+
     }
-    public static void main(String asrgs[]) {
+
+    public static void main(String args[]) {
         int n = sc.nextInt();
         int b = sc.nextInt();
-        int ans = decimalToAnyBase(n, b);
+        int ans = anyBaseToDec(n, b);
         System.out.println(ans);
-
     }
 
 }
