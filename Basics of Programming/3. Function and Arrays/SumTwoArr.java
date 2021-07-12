@@ -39,18 +39,10 @@ public class SumTwoArr {
         int ans[]=addTwoArry(arr1,arr2);
 
 
-        boolean nonZeroFound = false;
-        for (int ele : ans) {
-            if (ele != 0) {
-                nonZeroFound = true;
-            }
-
-            if (nonZeroFound)
-                System.out.println(ele);
+       
+        for(int i=0;i<ans.length;i++){
+            System.out.println(ans[i]);
         }
-        // for(int i=0;i<ans.length;i++){
-        //     System.out.println(ans[i]);
-        // }
 
     }
     
