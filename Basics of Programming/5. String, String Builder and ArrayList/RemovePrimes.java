@@ -18,7 +18,7 @@ public class RemovePrimes {
         for (int i = 0; i < al.size();) {
             Boolean ans = checkPrime(al.get(i));
             if (ans == true) {
-                al.remove(i);
+                al.remove(i);    //we can also do iteration from right to easy this code
 
             } else {
                 i++;
