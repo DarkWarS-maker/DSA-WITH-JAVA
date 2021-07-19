@@ -8,7 +8,7 @@ public class GetStairPath {
 
         if(n==0){
             ArrayList<String> bs=new ArrayList<>();
-            bs.add("");
+            bs.add
             return bs;
         }
         if(n<0){
