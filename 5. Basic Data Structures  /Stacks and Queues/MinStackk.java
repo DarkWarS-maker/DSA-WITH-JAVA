@@ -5,7 +5,7 @@ public class MinStackk {
         Stack<Integer> allData;
         Stack<Integer> minData;
     
-        public MinStack() {
+        public MinStack()
           allData = new Stack<>();
           minData = new Stack<>();
         }
